@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FormEvent } from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams, Navigate, Route } from "react-router-dom";
 import { io, Socket } from "socket.io-client";
 import InfoBar from "./InfoBar";
 import InputBar from "./InputBar";
@@ -22,7 +22,6 @@ const Chat = () => {
   const [messages, setMessages] = useState<MessageText[]>([]);
   const [users, setUsers] = useState<User[]>([]);
   const [isError, setIsError] = useState(false);
-  const navigate = useNavigate();
 
   const [searchParams] = useSearchParams();
 
@@ -64,7 +63,7 @@ const Chat = () => {
   };
 
   return isError ? (
-    navigate("/")
+    <Route element={<Navigate to="/" />} />
   ) : (
     <div className="flex justify-center items-center h-screen w-full bg-green-400">
       <div className="flex flex-col justify-between relative w-full bg-white h-full border-4 border-black sm:mx-3 sm:h-5/6 sm:shadow-solid-lg sm:max-w-screen-sm sm:border-[6px]">
