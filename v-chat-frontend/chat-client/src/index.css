@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .shadow-solid-lg {
+    box-shadow: 15px 15px black;
+  }
+
+  .shadow-solid-sm {
+    box-shadow: 7px 7px black;
+  }
+
+  .shadow-solid-xs {
+    box-shadow: 5px 5px black;
+  }
+}
