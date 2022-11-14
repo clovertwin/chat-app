@@ -6,8 +6,7 @@ import InputBar from "./InputBar";
 import Messages from "./Messages";
 import { User } from "../types";
 
-const ENDPOINT =
-  "http://chatserver-env.eba-2tn7qivb.us-east-1.elasticbeanstalk.com/";
+const ENDPOINT = "https://chat-app-server-ten.vercel.app/";
 let socket: Socket;
 
 interface MessageText {
