@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100%;
+}
+
 @layer components {
   .shadow-solid-lg {
     box-shadow: 15px 15px black;
