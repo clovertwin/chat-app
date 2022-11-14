@@ -6,7 +6,7 @@ import InputBar from "./InputBar";
 import Messages from "./Messages";
 import { User } from "../types";
 
-const ENDPOINT = "https://chat-app-server-ten.vercel.app/";
+const ENDPOINT = "https://chat-server-u0i9.onrender.com";
 let socket: Socket;
 
 interface MessageText {
